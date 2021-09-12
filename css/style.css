@@ -86,6 +86,10 @@ body._lock {
   overflow: hidden;
 }
 
+body._pc .contacts__button:hover {
+  font-size: 25px;
+}
+
 .container {
   max-width: 945px;
   margin: 0 auto;
@@ -337,9 +341,6 @@ body._lock {
 .footer-container .contacts__button .contacts__link {
   color: #ffffff;
   text-decoration: none;
-}
-.footer-container .contacts__button:hover {
-  font-size: 25px;
 }
 .footer-container .active {
   animation-name: show-messengers;

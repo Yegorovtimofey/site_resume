@@ -24,6 +24,12 @@ body._lock {
   overflow: hidden;
 }
 
+body._pc{
+  .contacts__button:hover{
+    font-size: 25px;
+  }
+}
+
 .container {
   max-width: 945px;
   margin: 0 auto;
@@ -284,15 +290,14 @@ body._lock {
     @media (max-width: 767px) {
       font-size: ($defaultSize * 0.75) ;
 
+
     }
     .contacts__link {
       color: #ffffff;
       text-decoration: none;
     }
   }
-  .contacts__button:hover{
-    font-size: 25px;
-  }
+
 
   .active {
     animation-name: show-messengers;
@@ -389,7 +394,7 @@ menu.menu__icon {
     cursor: pointer;
   }
 
-  .menu__icon span,
+    .menu__icon span,
   .menu__icon:before,
   .menu__icon:after{
     left: 0;
