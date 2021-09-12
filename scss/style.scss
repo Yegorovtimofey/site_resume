@@ -1,0 +1,451 @@
+@import "normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"),
+      url("../fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"),
+      url("../fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+$h1: 47px;
+$h2: 34px;
+$defaultSize: 18px;
+
+
+body{
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 945px;
+  margin: 0 auto;
+  @media (max-width: 992px ) {
+    max-width: 750px;
+  }
+
+  @media (max-width: 767px ) {
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+.header_container {
+}
+.menu {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #828282;
+  .menu__link {
+    text-decoration: none;
+    font-family: "Gilroy-Bold",sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;}
+  .menu__link_color {
+    color: #070707;
+  }
+}
+.name-age__container {
+  display: flex;
+  margin-bottom: 50px;
+
+  .name {
+    flex: 1 1 33.333%;
+
+    .name__h1 {
+      display: inline-flex;
+      font-family: "Gilroy-Bold", sans-serif;
+      font-size: 47px;
+      color: #070707;
+      @media (max-width: 767px) {
+        font-size: ($h1 * 0.75) ;
+        
+      }
+    }
+  }
+
+  .age {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.333%;
+    text-align: center;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    color: #070707;
+    justify-content: flex-end;
+    @media (max-width: 767px) {
+      font-size: ($defaultSize * 0.75) ;
+
+    }
+
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.333%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    @media (max-width: 767px) {
+      font-size: ($defaultSize * 0.75) ;
+
+    }
+
+
+    .language__h2{
+      font-family: "Gilroy-Medium", sans-serif;
+      font-size: 34px;
+      @media (max-width: 767px) {
+        font-size: ($h2 * 0.75) ;
+
+      }
+
+
+    }
+  }
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 387px;
+  background-image: url("../img/black_square.jpg");
+  border-radius: 25px;
+  margin-bottom: 100px;
+  .photo__text{
+    font-family: "Caveat", sans-serif ;
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+
+
+.about-me__container {
+  background-color: #F6F6F6;
+  text-align: center;
+
+  .about-me__h2{
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    @media (max-width: 767px) {
+      font-size: ($h2 * 0.75) ;
+
+    }
+  }
+
+  .about-me__text-container {
+    .about-me__text {
+      font-size: 18px;
+      font-family: Gilroy-Medium , sans-serif;
+      line-height: 21px;
+      margin-bottom: 50px;
+      &:last-child{
+        padding-bottom: 50px;
+      }
+      @media (max-width: 767px) {
+        font-size: ($defaultSize * 0.75) ;
+
+      }
+    }
+  }
+}
+
+.skills__container {
+
+  .skills__h2 {
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 25px;
+    @media (max-width: 767px) {
+      font-size: ($h2 * 0.75) ;
+
+    }
+  }
+  .skills__p {
+    display: block;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 83px;
+    @media (max-width: 767px) {
+      font-size: ($defaultSize * 0.75) ;
+
+    }
+  }
+  .skills__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    .skills__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 25%;
+      height: 180px;
+
+      .skills__img {
+        align-self: center;
+        min-width: 90px;
+        height: 90px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+
+      .skills__img_1 {
+        background-image: url("../img/html5_logo.png");
+      }
+      .skills__img_2 {
+        background-image: url("../img/css3logo_2.png");
+      }
+      .skills__img_3 {
+        background-image: url("../img/JavaScript_logo_2.png");
+      }
+      .skills__img_4 {
+        background-image: url("../img/python_logo.png");
+      }
+
+      .skills__description{
+        font-family: Gilroy-Medium, sans-serif;
+        font-size: 18px;
+        align-self: center;
+      }
+
+      .skills__rating {
+        align-self: center;
+      }
+    }
+  }
+}
+
+.footer-container {
+  padding-bottom: 100px;
+  text-align: center;
+  .contacts__h2 {
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    padding-bottom: 25px;
+    @media (max-width: 767px) {
+      font-size: ($h2 * 0.75) ;
+
+    }
+  }
+  .contacts__message {
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+      font-size: ($defaultSize * 0.75) ;
+
+    }
+  }
+
+  .contacts__button {
+    transition-duration: 1s;
+    display: inline-block;
+    width: (180/945*120%);
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      font-size: ($defaultSize * 0.75) ;
+
+    }
+    .contacts__link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  .contacts__button:hover{
+    font-size: 25px;
+  }
+
+  .active {
+    animation-name: show-messengers;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  .messenger__row{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+    .messenger__container {
+      display: flex;
+      justify-content: space-between;
+      min-width: (342/945*100%);
+      .messenger__mail {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/mail.svg");
+        background-size: contain;
+
+      }
+      .messenger__phone {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/smartphone.svg");
+        background-size: contain;
+
+      }
+      .messenger__tg {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/telegram.svg");
+        background-size: contain;
+
+      }
+      .messenger__wa {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/whatsapp.svg");
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@keyframes show-messengers {
+  0% {
+    opacity: 0;
+  }
+  20%{
+    visibility: visible;
+    opacity: 20%
+  }
+
+  40%{
+    visibility: visible;
+    opacity: 40%;
+  }
+  60%{
+    visibility: visible;
+    opacity: 60%;
+  }
+  80%{
+    visibility: visible;
+    opacity: 80%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+menu.menu__icon {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .header_container {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .menu__icon span,
+  .menu__icon:before,
+  .menu__icon:after{
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #070707;
+  }
+
+  .menu__icon:before ,
+  .menu__icon:after{
+    content: "";
+  }
+
+  .menu__icon:before {
+    top: 0;
+  }
+
+  .menu__icon:after{
+    bottom: 0;
+  }
+
+  .menu__icon span{
+    top: 50%;
+    transform: scale(1) translate(0, -50%);
+  }
+  .menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,9);
+    padding: 100px 30px 30px 30px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+
+    .menu__link{
+      font-family: "Gilroy-Medium", sans-serif;
+      font-size: 34px;
+      color: white;
+      padding-bottom: 15px;
+    }
+  }
+
+  .menu__active{
+    left: 0;
+    }
+
+  .menu__active:before,
+  .menu__active:after,
+  .menu__active span {
+    background-color: white;
+  }
+}
