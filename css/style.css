@@ -105,6 +105,21 @@ body._pc .contacts__button:hover {
     flex-direction: column;
     align-items: center;
   }
+  .container .name__h1 {
+    margin-bottom: 25px;
+  }
+  .container .age {
+    margin-bottom: 25px;
+  }
+  .container .language__language {
+    margin-top: 10px;
+  }
+  .container .skills__stars {
+    width: 12px;
+  }
+  .container .messenger__container > a {
+    margin-right: 5px;
+  }
 }
 
 .menu {
@@ -195,6 +210,7 @@ body._pc .contacts__button:hover {
   font-family: "Caveat", sans-serif;
   font-size: 30px;
   color: #fff;
+  text-align: center;
 }
 
 .about-me__container {
@@ -225,6 +241,8 @@ body._pc .contacts__button:hover {
 @media (max-width: 767px) {
   .about-me__container .about-me__text-container .about-me__text {
     font-size: 13.5px;
+    padding: 0 10px;
+    margin: 0 0 30px;
   }
 }
 
@@ -266,12 +284,25 @@ body._pc .contacts__button:hover {
   max-width: 25%;
   height: 180px;
 }
+@media (max-width: 767px) {
+  .skills__container .skills__row .skills__card {
+    height: 108px;
+    align-items: center;
+    padding: 0 5px;
+  }
+}
 .skills__container .skills__row .skills__card .skills__img {
   align-self: center;
   min-width: 90px;
   height: 90px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .skills__container .skills__row .skills__card .skills__img {
+    min-width: 54px;
+    height: 54px;
+  }
 }
 .skills__container .skills__row .skills__card .skills__img_1 {
   background-image: url("../img/html5_logo.png");
@@ -289,6 +320,11 @@ body._pc .contacts__button:hover {
   font-family: Gilroy-Medium, sans-serif;
   font-size: 18px;
   align-self: center;
+}
+@media (max-width: 767px) {
+  .skills__container .skills__row .skills__card .skills__description {
+    font-size: 13.5px;
+  }
 }
 .skills__container .skills__row .skills__card .skills__rating {
   align-self: center;

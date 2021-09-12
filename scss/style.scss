@@ -41,6 +41,25 @@ body._pc{
     max-width: none;
     flex-direction: column;
     align-items: center;
+
+    .name__h1 {
+      margin-bottom: 25px;
+    }
+
+    .age {
+      margin-bottom: 25px;
+    }
+
+    .language__language {
+      margin-top: 10px;
+    }
+
+    .skills__stars {
+      width: (20*0.6px);
+    }
+    .messenger__container>a {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -142,6 +161,7 @@ body._pc{
     font-family: "Caveat", sans-serif ;
     font-size: 30px;
     color: #fff;
+    text-align: center;
   }
 }
 
@@ -174,6 +194,8 @@ body._pc{
       }
       @media (max-width: 767px) {
         font-size: ($defaultSize * 0.75) ;
+        padding: 0 10px;
+        margin: 0 0 30px;
 
       }
     }
@@ -216,6 +238,11 @@ body._pc{
       justify-content: space-between;
       max-width: 25%;
       height: 180px;
+      @media (max-width: 767px){
+        height: 108px;
+        align-items: center;
+        padding: 0 5px;
+      }
 
       .skills__img {
         align-self: center;
@@ -223,7 +250,11 @@ body._pc{
         height: 90px;
         background-size: contain;
         background-repeat: no-repeat;
+        @media (max-width: 767px) {
+          min-width: 54px;
+          height: 54px;
         }
+      }
 
       .skills__img_1 {
         background-image: url("../img/html5_logo.png");
@@ -242,6 +273,9 @@ body._pc{
         font-family: Gilroy-Medium, sans-serif;
         font-size: 18px;
         align-self: center;
+        @media (max-width: 767px) {
+          font-size: ($defaultSize * 0.75);
+        }
       }
 
       .skills__rating {
@@ -316,6 +350,7 @@ body._pc{
       display: flex;
       justify-content: space-between;
       min-width: (342/945*100%);
+
       .messenger__mail {
         width: 40px;
         height: 40px;
@@ -343,6 +378,8 @@ body._pc{
         background-image: url("../img/whatsapp.svg");
         background-size: contain;
       }
+
+
     }
   }
 }
@@ -394,9 +431,9 @@ menu.menu__icon {
     cursor: pointer;
   }
 
-    .menu__icon span,
+  .menu__icon span,
   .menu__icon:before,
-  .menu__icon:after{
+  .menu__icon:after {
     left: 0;
     position: absolute;
     height: 10%;
@@ -405,8 +442,8 @@ menu.menu__icon {
     background-color: #070707;
   }
 
-  .menu__icon:before ,
-  .menu__icon:after{
+  .menu__icon:before,
+  .menu__icon:after {
     content: "";
   }
 
@@ -414,15 +451,15 @@ menu.menu__icon {
     top: 0;
   }
 
-  .menu__icon:after{
+  .menu__icon:after {
     bottom: 0;
   }
 
-  .menu__icon span{
+  .menu__icon span {
     top: 50%;
     transform: scale(1) translate(0, -50%);
   }
-  .menu{
+  .menu {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -431,12 +468,12 @@ menu.menu__icon {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,9);
+    background-color: rgba(0, 0, 0, 9);
     padding: 100px 30px 30px 30px;
     transition: all 0.3s ease 0s;
     overflow: auto;
 
-    .menu__link{
+    .menu__link {
       font-family: "Gilroy-Medium", sans-serif;
       font-size: 34px;
       color: white;
@@ -444,9 +481,9 @@ menu.menu__icon {
     }
   }
 
-  .menu__active{
+  .menu__active {
     left: 0;
-    }
+  }
 
   .menu__active:before,
   .menu__active:after,
@@ -454,3 +491,7 @@ menu.menu__icon {
     background-color: white;
   }
 }
+
+
+
+// в html в "картинке" поменять на i dont have ANY one that i like
